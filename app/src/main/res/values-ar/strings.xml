@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سووش</string>
+    <string name="background_image">background image</string>
+    <string name="app_logo">app logo</string>
+    <string name="desired_league">الدوري المرغوب</string>
+    <string name="mens">الرجال</string>
+    <string name="womens">النساء</string>
+    <string name="co_ed">مختلط</string>
+    <string name="next">التالي</string>
+    <string name="go_all_in">انتقل الكل في</string>
+    <string name="on_going_all_in">على الذهاب في كل شيء</string>
+    <string name="find_a_team_in_your_city_and_dominate_the_league">ابحث عن فريق في مدينتك وسيطر على الدوري</string>
+    <string name="get_started">البدء</string>
+    <string name="i_am_a">أنا:</string>
+    <string name="beginner">مبتدئ</string>
+    <string name="baller">لاعب الكرة</string>
+    <string name="finish">إنهاء</string>
+    <string name="search_league">هل تبحث عن دوري مختلط للمبتدئين بالقرب منك ...</string>
+</resources>

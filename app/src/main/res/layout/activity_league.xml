@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.LeagueActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/league_image_view_width"
+        android:layout_height="@dimen/league_image_view_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/desiredleaguebg"
+        android:contentDescription="@string/background_image" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/league_image_view2_width"
+        android:layout_height="@dimen/league_image_view2_height"
+        android:layout_marginStart="@dimen/eight_dp"
+        android:layout_marginTop="@dimen/league_image_view2_margin_top"
+        android:layout_marginEnd="@dimen/eight_dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/app_logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/eight_dp"
+        android:layout_marginTop="@dimen/league_text_view4_margin_top"
+        android:layout_marginEnd="@dimen/eight_dp"
+        android:text="@string/desired_league"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/league_text_view4_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/league_linear_margin_start"
+        android:layout_marginEnd="@dimen/league_linear_margin_end"
+        android:layout_marginTop="@dimen/league_linear_margin_top"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <ToggleButton
+            android:id="@+id/mensLeagueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/swoosh_toggle"
+            android:text="@string/mens"
+            android:textColor="@android:color/white"
+            android:textOff="@string/mens"
+            android:textOn="@string/mens"
+            android:onClick="onMensClicked"
+            app:srcCompat="@drawable/swoosh_button_checked" />
+
+        <ToggleButton
+            android:id="@+id/womensLeagueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/league_womens_league_btn_margin_top"
+            android:layout_marginBottom="@dimen/league_womens_league_btn_margin_bottom"
+            android:background="@drawable/swoosh_toggle"
+            android:text="@string/womens"
+            android:textColor="@android:color/white"
+            android:textOff="@string/womens"
+            android:textOn="@string/womens"
+            android:onClick="onWomensClicked"
+            app:srcCompat="@drawable/swoosh_button_checked" />
+
+        <ToggleButton
+            android:id="@+id/coedLeagueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/swoosh_toggle"
+            android:text="@string/co_ed"
+            android:textColor="@android:color/white"
+            android:textOff="@string/co_ed"
+            android:textOn="@string/co_ed"
+            android:onClick="onCoedClicked"
+            app:srcCompat="@drawable/swoosh_button_checked" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/leagueNextBtn"
+        android:layout_width="401dp"
+        android:layout_height="61dp"
+        android:background="@drawable/swoosh_button"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="leagueNextClicked"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

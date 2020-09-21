@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.SkillActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/skill_image_view3_width"
+        android:layout_height="@dimen/skill_image_view3_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/beginnerballerbg"
+        android:contentDescription="@string/background_image" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/skill_image_view2_width"
+        android:layout_height="@dimen/skill_image_view2_height"
+        android:layout_marginTop="@dimen/skill_image_view2_margin_top"
+        android:layout_marginStart="@dimen/eight_dp"
+        android:layout_marginEnd="@dimen/eight_dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/app_logo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eight_dp"
+        android:layout_marginTop="@dimen/skill_image_view5_margin_top"
+        android:layout_marginRight="@dimen/eight_dp"
+        android:text="@string/i_am_a"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/skill_image_view5_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/skill_linear_layout_margin_left"
+        android:layout_marginTop="@dimen/skill_linear_layout_margin_top"
+        android:layout_marginRight="@dimen/skill_linear_layout_margin_right"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <ToggleButton
+            android:id="@+id/beginnerSkillBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/swoosh_button"
+            android:text="@string/beginner"
+            android:textColor="@android:color/white"
+            android:textOff="@string/beginner"
+            android:textOn="@string/beginner"
+            android:onClick="onBeginnerClicked"/>
+
+        <ToggleButton
+            android:id="@+id/ballerSkillBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/skill_baller_skill_btn_marginStart"
+            android:background="@drawable/swoosh_button"
+            android:text="@string/baller"
+            android:textColor="@android:color/white"
+            android:textOff="@string/baller"
+            android:textOn="@string/baller"
+            android:onClick="onBallerClicked"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/skillFinishBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/swoosh_button"
+        android:textColor="@android:color/white"
+        android:text="@string/finish"
+        android:layout_marginStart="@dimen/skill_finish_skill_btn_marginStart"
+        android:layout_marginEnd="@dimen/skill_finish_skill_btn_marginEnd"
+        android:layout_marginBottom="@dimen/skill_finish_skill_btn_marginBottom"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onSkillFinishClicked"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
